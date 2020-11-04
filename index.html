@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://kit.fontawesome.com/0f3017ddc8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="headerWrap">
+      <div class="wrapTop">
+        <span class="goMain"><a href="https://www.nate.com/?f=natesvc">네이트 메인가기</a></span>
+        <ul class="content">
+          <li><a href="http://xo.nate.com/Login.sk?redirect=http%3A//nateonweb.nate.com/">로그인</a></li>
+          <li><a href="http://mail3.nate.com/#index">메일</a></li>
+          <li><a href="http://news.nate.com/">뉴스</a></li>
+          <li><a href="https://pann.nate.com/">판</a></li>
+          <li><a href="https://tv.nate.com/">TV</a></li>
+          <li><a href="https://pann.nate.com/talk/">톡톡</a></li>
+          <li><a href="https://comics.nate.com/">만화</a></li>
+          <li><a href="http://game.nate.com/">게임</a></li>
+          <li><a href="http://shopping.nate.com/">쇼핑</a></li>
+          <li><a href="#">더보기 +</a></li>
+        </ul>
+      </div>
+
+      <div class="wrapBottom">
+        <a href="#"><img src="image/logo.png" alt=""/></a>
+        <ul class="menu">
+          <li><a href="http://nateonweb.nate.com/">네이트온</a></li>
+          <li><a href="http://nateonweb.nate.com/teamroom/">팀룸</a></li>
+          <li><a href="http://nateonweb.nate.com/gifticon/">기프티콘</a></li>
+          <li><a href="http://rsupport.nate.com/">내PC제어</a></li>
+          <li><a href="http://talkon.nate.com/">부가서비스</a></li>
+        </ul>
+        <div class="baro">
+          <a href="https://service.nateon.nate.com/board/"><span>공지사항</span></a>
+          <a href="https://erms.nate.com/faq/exSelfFAQList.jsp?parentNodeId=NODE0000001230&nodeDepth=0"><span>고객센터</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 내용 -->
+  <section>
+    <div class="main">
+      <div class="sectionPage">
+        <div class="leftSide">
+          <div class="top">
+            <span>함께하는 일이</span>
+            <span>쉬워진다</span>
+            <span>네이트온</span>
+          </div>
+          <div class="mid">
+            <span>편리함은 기본, 새로운 모습으로 변신한</span>
+            <span>네이트온과 만나보세요.</span>
+          </div>
+          <div class="bottom">
+            <ul class="topBtn">
+              <li><a href="https://br.nate.com/index.php?code=F085"><img src="./image/btn-windows.png" alt=""></a></li>
+              <li><a href="https://br.nate.com/index.php?code=F065"><img src="image/btn-mac.png" alt=""></a></li>
+            </ul>
+            <ul class="botBtn">
+              <li><a href="https://play.google.com/store/apps/details?id=Uxpp.UC&hl=ko"><img src="image/btn-google.png" alt=""></a></li>
+              <li><a href="https://itunes.apple.com/kr/app/nateon/id362693357?mt=8"><img src="image/btn-appstore.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <img src="./image/keyvisual-pc.png" alt="" class="rightImage">
+        <script>
+          var image = document.querySelector('.rightImage');
+          var count = 0;
+          function change() {
+            if (count == 0) {
+              image.src = './image/keyvisual-pc.png';
+              count = 1;
+            }
+            else if (count = 1) {
+              image.src = './image/keyvisual-mobile.png';
+              image.style.height = '738px';
+              count = 0;
+            }
+          }
+          setInterval(() => {
+            change();
+          }, 2000);
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- 이미지 슬라이더 -->
+  <slider>
+    <div class="background">
+      <h1>이미지 슬라이더 준비중</h1>
+    </div>
+  </slider>
+
+  <!-- PC제어 서비스 -->
+  <section>
+    <div class="pcControl">
+      <div class="content">
+        <div class="right">
+          <div class="top">
+            <span>업무에 필요한 이메일, 문자,</span>
+            <span>내 PC제어 서비스</span>
+          </div>
+          <div class="bottom">
+            <span>네이트온에서는 메신저 기능은 기본, 업무에 필요한 메일과 문자 메시지 발송,</span>
+            <span>내 PC 제어 기능을 이용할 수 있습니다.</span>
+            <span>네이트온 친구라면 쉽게 메일과 문자 메시지를 보낼 수 있고</span>
+            <span>스마트 폰에서 PC 화면을 제어할 수 있는 내 PC 제어 기능은 시공간의 제약없이</span>
+            <span>원하는 작업을 할 수 있게 도와줘요.</span>
+          </div>
+        </div>
+        <div class="left">
+          <img src="image/pc_control.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 팀 프로젝트 공간 -->
+  <section>
+    <div class="team">
+      <div class="content">
+        <div class="top">
+          <span>프로젝트, 조별 과제에 최적화 된</span>
+          <span>팀플 공간, 팀룸</span>
+        </div>
+        <div class="bottom">
+          <div class="first">
+            <img src="image/img-group.png" alt="">
+            <span class="title">
+              <span>멤버별, 주제별로 관리하는</span>
+              <span>소그룹 : 모임</span>
+            </span>
+            <span class="intro">
+              <span>팀룸 안에서 업무별, 과제별로 모임을 만들고</span>
+              <span>허용된 멤버끼리 협업 활동을 할 수 있어요.</span>
+            </span>
+          </div>
+          <div class="second">
+            <img src="image/img-file.png" alt="">
+            <span class="title">기간 제한 없이 파일 공유하기</span>
+            <span class="intro">
+              <span>멤버들의 피땀으로 만들어진 산출물들과</span>
+              <span>자료들을 공유해보세요. 팀룸당 3GB까지</span>
+              <span>보관할 수 있고 기간 제한없이</span>
+              <span>다운로드 할 수 있어요.</span>
+            </span>
+          </div>
+          <div class="third">
+            <img src="image/img-history.png" alt="">
+            <span class="title">업무 히스토리를 한 눈에</span>
+            <span class="intro">
+              <span>팀룸에서는 모든 대화가 히스토리가 됩니다.</span>
+              <span>모임에 참여하여 대화 내용을 통해</span>
+              <span>업무 내용을 언제라도 확인할 수 있어요.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 이미지 슬라이더 2 -->
+  <slider2>
+    <div class="background">
+      <div class="content">
+        <h1>이미지 슬라이더 준비중</h1>
+      </div>
+    </div>
+  </slider2>
+
+  <!-- 설치2 -->
+  <install>
+    <div class="background">
+      <div class="content">
+        <div class="top">
+          <div class="title">
+            <span>내가 있는 어떤 곳이라도, 네이트온과 함께</span>
+          </div>
+          <div class="info">
+            <span>외근 갈 때, 재택 할 때… 회사에서 보던 문서 어떻게 확인하지?</span>
+            <span>네이트온은 다양한 디바이스 동기화를 지원하여 이동 중에도 팀원들과 계속해서 대화를 이어갈 수 있고</span>
+            <span>최근에 주고 받은 파일도 언제든 확인할 수 있어요.</span>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="pc">
+            <div class="title">PC 다운로드<br></div>
+            <ul class="os">
+              <li><a href="https://br.nate.com/index.php?code=F085">Windows</a><i class="fas fa-arrow-down" onclick="location.href='https://br.nate.com/index.php?code=F085'"></i></li>
+              <li><a href="https://br.nate.com/index.php?code=F065">Mac OS</a><i class="fas fa-arrow-down" onclick="location.href='https://br.nate.com/index.php?code=F065'"></i></li>
+            </ul>
+          </div>
+          <div class="mac">
+            <div class="title">APP 다운로드<br></div>
+            <ul class="os">
+              <li><a href="https://play.google.com/store/apps/details?id=Uxpp.UC&hl=ko">Android</a><i class="fas fa-arrow-down" onclick="location.href='https://play.google.com/store/apps/details?id=Uxpp.UC&hl=ko'"></i></li>
+              <li><a href="https://itunes.apple.com/kr/app/nateon/id362693357?mt=8">Mac OS</a><i class="fas fa-arrow-down" onclick="location.href='https://itunes.apple.com/kr/app/nateon/id362693357?mt=8'"></i></li>
+            </ul>
+          </div>
+          <div class="web">
+            <div class="title">웹 메신저<br></div>
+            <ul class="os">
+              <li><a href="http://nateonweb.nate.com/#">바로 실행하기</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </install>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="background">
+      <div class="content">
+        <ul class="nav">
+          <li><a href="#">서비스약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">청소년보호정책</a></li>
+          <li><a href="#">광고문의</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <span class="copyright">Copyright © SK Communications All right reserved</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

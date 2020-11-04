@@ -1,0 +1,440 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* body {
+    font-family: 'Nanum Gothic Coding', monospace;
+} */
+
+/* 헤더 - 상단 */
+.headerWrap {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.headerWrap .wrapTop {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  height: 36px;
+}
+
+.headerWrap .wrapTop .goMain {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.headerWrap .wrapTop .content {
+  display: flex;
+}
+
+.headerWrap .wrapTop .content li {
+  font-size: 11px;
+  padding: 8px;
+}
+
+/* 헤더 - 하단 */
+
+.headerWrap .wrapBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.headerWrap .wrapBottom img {
+  width: 133px;
+  height: 26px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.headerWrap .wrapBottom .menu {
+  display: flex;
+  margin-right: 100px;
+}
+
+.headerWrap .wrapBottom .menu li {
+  font-size: 16px;
+  padding: 8px 30px;
+}
+
+.headerWrap .wrapBottom .menu li:first-child {
+  font-weight: bold;
+}
+
+.headerWrap .wrapBottom .baro {
+  display: flex;
+}
+
+.headerWrap .wrapBottom .baro span {
+  border: 1px solid #cdd1d5;
+  border-radius: 15px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #8490a3;
+  cursor: pointer;
+  text-align: center;
+}
+
+.headerWrap .wrapBottom .baro span:first-child {
+  margin-right: 15px;
+}
+
+/* 헤더아래 메인페이지 */
+.main {
+  background-color: #7f99e2;
+  width: 100%;
+  height: 800px;
+  margin-top: 70px;
+}
+
+.main .sectionPage {
+  width: 1282px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.main .sectionPage .leftSide {
+  position: absolute;
+  top: 30%;
+  margin-left: 100px;
+}
+.main .sectionPage .leftSide .top {
+  display: flex;
+  flex-direction: column;
+}
+.main .sectionPage .leftSide .top span {
+  display: block;
+  font-size: 55px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main .sectionPage .leftSide .mid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.main .sectionPage .leftSide .mid span {
+  display: block;
+  color: #fff;
+}
+
+.main .sectionPage .leftSide .mid span:nth-child(2) {
+  margin-top: 5px;
+}
+.main .sectionPage .leftSide .bottom .topBtn {
+  margin-top: 30px;
+}
+.main .sectionPage .leftSide .bottom .topBtn,
+.main .sectionPage .leftSide .bottom .botBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .sectionPage .leftSide .bottom img {
+  width: 181px;
+  height: 57px;
+  padding: 5px 5px;
+}
+
+.main .sectionPage .rightImage {
+  width: 742px;
+  height: 800px;
+  position: relative;
+  left: 45%;
+  transition: opacity 1s;
+  opacity:    1;
+}
+
+/* 슬라이더 */
+
+slider .background {
+  height: 800px;
+  width: 100%;
+}
+
+slider .background h1 {
+  text-align: center;
+}
+
+/* PC 제어 */
+section .pcControl {
+  width: 100%;
+  height: 800px;
+  background-color: #f2f4f9;
+}
+
+section .pcControl .content {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+section .pcControl .content .right {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section .pcControl .content .right .top,
+section .pcControl .content .right .bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+section .pcControl .content .right .bottom {
+  margin-top: 40px;
+}
+
+section .pcControl .content .right .bottom span {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+section .pcControl .content .right .top span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section .pcControl .content .left img {
+  width: 254px;
+  height: 800px;
+  margin-left: 250px;
+}
+
+/* 팀 프로젝트 */
+
+section .team {
+  width: 100%;
+  height: 800px;
+  background-color: #56689a;
+}
+
+section .team .content {
+  width: 1100px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+section .team .content .top {
+  display: flex;
+  flex-direction: column;
+}
+section .team .content .top span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section .team .content .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+section .team .content .bottom img {
+  width: 130px;
+  height: 130px;
+}
+
+section .team .content .bottom > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+section .team .content .bottom > div .title {
+  display: flex;
+  flex-direction: column;
+}
+
+section .team .content .bottom > div .title span:first-child,
+section .team .content .bottom > div .title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  /* margin-top: 20px; */
+}
+
+section .team .content .bottom > div .title {
+  margin-top: 20px;
+}
+
+section .team .content .bottom > div .title span:nth-child(2) {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section .team .content .bottom > div .intro {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .team .content .bottom > div .intro span {
+  color: #cbcdd1;
+  font-size: 15px;
+}
+
+section .team .content .bottom > div .intro span:nth-child(2),
+section .team .content .bottom > div .intro span:nth-child(3),
+section .team .content .bottom > div .intro span:nth-child(4) {
+  margin-top: 10px;
+}
+
+/* 슬라이더 2 */
+
+slider2 .background {
+  width: 100%;
+  height: 800px;
+}
+
+slider2 .background h1 {
+  text-align: center;
+}
+
+/* 설치2 */
+
+install .background {
+  width: 100%;
+  height: 800px;
+  background-color: #8691a2;
+}
+
+install .background .content {
+  width: 1100px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+install .background .content .top .title span {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+install .background .content .top .info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+install .background .content .top .info span {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+install .background .content .bottom > div .title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 6px solid white;
+  height: 21px;
+  padding-bottom: 24px;
+}
+
+install .background .content .bottom > div {
+    width: 238px;
+}
+
+install .background .content .bottom > div .os {
+    padding-top: 20px;
+}
+
+install .background .content .bottom > div .os li a {
+    color:#fff;
+    font-size: 16px;    
+}
+
+install .background .content .bottom > div > ul > li {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+install .background .content .bottom > div > ul > li > i {
+    color : #fff;
+    cursor: pointer;
+    
+}
+
+install .background .content .bottom > div .os li:nth-child(2) {
+    padding-top: 20px;
+}
+
+install .background .content .bottom > div:nth-child(2),
+install .background .content .bottom > div:nth-child(3) {
+    margin-left: 100px;
+}
+
+install .background .content .bottom {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+/* 푸터 */
+footer .background {
+    width: 100%;
+    height: 86px;
+}
+
+footer .background .content {
+    width: 1100px;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+}
+
+footer .background .content .nav {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .background .content .nav li {
+    font-size: 12px;
+    border-right: 1px solid gainsboro;
+    color: #424549;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+footer .background .content .nav li:nth-child(2) {
+    font-weight: bold;
+}
+
+footer .background .content .copyright {
+    color: #686d75;
+    font-size: 12px;
+}
